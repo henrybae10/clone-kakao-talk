@@ -1,0 +1,18 @@
+#login-btn:hover {
+	animation: btnFocus 2s ease-in-out;
+}
+
+@keyframes btnFocus {
+	0% {
+		color: black;
+		transform: scale(1);
+	}
+	50% {
+		color: red;
+		transform: scale(1.2);
+	}
+	100% {
+		color: black;
+		transform: scale(1);
+	}
+}

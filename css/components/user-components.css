@@ -7,6 +7,16 @@
 
 .user-component {
 	justify-content: space-between;
+	animation: fadein 1s ease-in-out;
+}
+
+@keyframes fadein {
+	from {
+		transform: translateX(-150px);
+	}
+	to {
+		transform: none;
+	}
 }
 
 .user-component__column:last-child {
@@ -63,4 +73,9 @@
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
+}
+
+.user-component img:hover {
+	transition: transform 1s ease-in-out;
+	transform: scale(1.4);
 }
